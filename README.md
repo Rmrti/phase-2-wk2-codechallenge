@@ -1,5 +1,5 @@
-Bot Battlr
-Overview
+#Bot Battlr
+#Overview
 
 Bot Battlr is a simple web app where you can collect, organize, and battle with different bots. The app lets you build your own army by picking bots with different abilities. You can also sort and filter bots to find the ones that suit your strategy best. Once you have enlisted your army, you can manage it by  releasing, or even permanently deleting bots.
 Features
@@ -12,7 +12,7 @@ Features
     Bot Details: Clicking on a bot to see more detailed information about its abilities.
     Deleting Bots: Incase you don’t want a bot in your army anymore, you can remove it permanently from both your army and the database.
 
-Technologies Used
+#Technologies Used
 
 This project is built using:
 
@@ -21,11 +21,13 @@ This project is built using:
     Fetch API – Retrieves bot data from the backend and allows actions like deleting bots.
     Backend API – The app connects to a backend server that stores all the bot information (assumed to be at http://localhost:8001/bots).but actually in (db.json)
 
-Getting Started
+#Getting Started
 
-      You can run the app here: https://rmrti.github.io/phase-2-wk2-codechallenge/
+      You can run the app here: 
+      
+https://rmrti.github.io/phase-2-wk2-codechallenge/
 
-How the App Works
+#How the App Works
 1. Viewing Bots
 
 When you open the app, you'll see a collection of bots. You can browse through them, sort them by different stats, or filter them based on their class.
