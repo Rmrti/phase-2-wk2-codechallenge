@@ -3,7 +3,7 @@ import BotCollection from "./components/BotCollection";
 import YourBotArmy from "./components/YourBotArmy";
 import SortBar from "./components/SortBar";
 import FilterBar from "./components/FilterBar";
-import './App.css';  
+import "./App.css";
 import BotSpecs from "./components/BotSpecs";
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
   // Sort bots based on selected stat
   const sortedBots = [...bots].sort((a, b) => b[sortOrder] - a[sortOrder]);
 
-  // Filter bots by selected class (multi-select filter)
+  // Filter bots by selected class
   const filteredBots = sortedBots.filter(
     (bot) => filterClass.length === 0 || filterClass.includes(bot.bot_class)
   );
@@ -58,13 +58,12 @@ const App = () => {
       <h1>Bot Battlr</h1>
       <SortBar setSortOrder={setSortOrder} />
       <FilterBar filterClass={filterClass} setFilterClass={setFilterClass} />
-      
+
       <div className="main">
         {selectedBot ? (
-          <BotSpecs 
+          <BotSpecs
             bot={selectedBot}
-            
-            onEnlist={(bot) => enlistBot()} 
+            onEnlist={(bot) => enlistBot()}
             onBack={() => setSelectedBot(null)}
             enlistedBots={myArmy}
             onDischarge={releaseBot}
@@ -72,10 +71,13 @@ const App = () => {
           />
         ) : (
           <>
-            
             <BotCollection bots={filteredBots} enlistBot={enlistBot} />
 
-            <YourBotArmy army={myArmy} releaseBot={releaseBot} dischargeBot={dischargeBot} />
+            <YourBotArmy
+              army={myArmy}
+              releaseBot={releaseBot}
+              dischargeBot={dischargeBot}
+            />
           </>
         )}
       </div>

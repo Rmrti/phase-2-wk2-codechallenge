@@ -11,6 +11,4 @@ const BotCollection = ({ bots, enlistBot }) => {
   );
 };
 
-
-
 export default BotCollection;

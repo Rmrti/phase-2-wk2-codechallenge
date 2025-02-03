@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const BotCard = ({ bot, enlistBot }) => {
   return (
     <div className="bot-card" onClick={() => enlistBot(bot)}>

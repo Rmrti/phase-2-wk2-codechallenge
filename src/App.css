@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
@@ -62,7 +62,6 @@ h1 {
   gap: 30px;
   flex-wrap: wrap;
 }
-
 
 /* Bot Collection */
 .bot-collection {
@@ -252,5 +251,4 @@ h1 {
   width: 100%;
   overflow-x: auto;
   gap: 10px;
-
 }

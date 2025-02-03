@@ -1,8 +1,15 @@
 import React from "react";
 
 const FilterBar = ({ setFilterClass }) => {
-  const classes = ["Support", "Medic", "Assault", "Defender", "Captain", "Witch"];
-  
+  const classes = [
+    "Support",
+    "Medic",
+    "Assault",
+    "Defender",
+    "Captain",
+    "Witch",
+  ];
+
   const handleFilterChange = (e) => {
     const value = e.target.value;
     setFilterClass(value ? [value] : []);
